@@ -100,6 +100,8 @@ class welcome:
         font = ImageFont.truetype("FORTE.ttf",70)
         # with open("pic.png","rb") as fp:
         im = Image.open("pic.ng")
+		if send_to is None:
+        send_to = member.server.default_channel
         fp = await self.welcome_member(im,font,member)
         await self.bot.send_file(member.server,fp,filename = "welcome.jpg")
 
