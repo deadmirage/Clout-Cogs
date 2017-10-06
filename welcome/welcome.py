@@ -1,4 +1,3 @@
-import discord
 from PIL import Image,ImageFont,ImageDraw,ImageOps,ImageFilter
 import aiohttp
 from unidecode import unidecode
