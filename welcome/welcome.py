@@ -97,11 +97,11 @@ class Welcome:
 		return temp
 
 	async def on_member_join(self,member):
-		font = ImageFont.truetype('FORTE.ttf',70)
+		font = ImageFont.truetype("FORTE.ttf",70)
 		# with open("pic.png","rb") as fp:
-		im = Image.open('pic.png')
+		im = Image.open("pic.png")
 		fp = await self.welcome_member(im,font,member)
-		await self.bot.send_file(member.server,fp,filename = 'welcome.jpg')
+		await self.bot.send_file(member.server,fp,filename = "welcome.jpg")
 
 
 def setup(bot):
