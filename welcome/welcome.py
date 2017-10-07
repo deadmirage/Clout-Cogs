@@ -22,7 +22,7 @@ class Welcome:
 		if text is None:
 			welcome = 'Welcome {0},\n to {1.server.name}!'.format(name, member)
 		else:
-		welcome = text
+			welcome = text
 
 		left = (width - new_width) // 2
 		top = (height - new_height) // 2
