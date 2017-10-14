@@ -1,4 +1,6 @@
 from PIL import Image,ImageFont,ImageDraw,ImageOps,ImageFilter
+import discord
+import asyncio
 import aiohttp
 from unidecode import unidecode
 from io import BytesIO
